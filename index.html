@@ -251,13 +251,39 @@ border-radius:50px;
 		  top:200px;
 		  margin-left:40%;
         position:absolute;
-		  background-color:rgba(0,255,255, .5);
 		  background-size:333px 333px;
 	background-repeat:no-repeat;
         background-image:url("https://i.pinimg.com/originals/b7/32/ef/b732efa198e812665dc1accd7a705ee4.png");
 	border-radius:50%;
 } 
+	  .earth2{
+		   border-style:solid;
+           z-index:7;
+	overflow:hidden;
+	width:333px; 
+	height:333px;
+		  top:200px;
+		  margin-left:40%;
+        position:absolute;
+		  background-color:rgba(0,255,255, .5);
+	border-radius:50%;
+ animation:earths 5s infinite ;
+  -webkit-animation:earths 5s infinite ;/* Safari 4.0 - 8.0 */
+			  
+}
+		   @keyframes earths{
+			 0%{transform:rotateX(360deg);}
+			 
+			   100%{transform:rotateX(360deg);} 
+		   }
+		
 		   
+		   @-webkit-keyframes earths{
+		       0%{transform:rotateX(360deg);}
+			 
+			   100%{transform:rotateX(360deg);}   
+		   }
+		   	   
  .Fallingstar1{
   position:absolute;
   width:50px;
@@ -284,16 +310,16 @@ border-radius:50px;
 }
 		   @keyframes cmoney{
 			  0%{top:50px; left:45%; z-index:5;}
-			    50%{top:450px; left:60%; z-index:7;}
-		   75%{top:450px; left:30%; z-index:7;}
+			    50%{top:450px; left:60%; z-index:8;}
+		   75%{top:450px; left:30%; z-index:8;}
 			   100%{top:50px; left:45%; z-index:5;}
 		   }
 		
 		   
 		   @-webkit-keyframes cmoney{
 		       0%{top:50px; left:45%; z-index:5;}
-			    50%{top:450px; left:60%; z-index:7;}
-		   75%{top:450px; left:30%; z-index:7;}
+			    50%{top:450px; left:60%; z-index:8;}
+		   75%{top:450px; left:30%; z-index:8;}
 			   100%{top:50px; left:45%; z-index:5;}   
 		   }
 		   
@@ -326,7 +352,7 @@ border-radius:50px;
      <br>
      <br>
       
- <div class="earthholder"><div class="earth"></div>
+ <div class="earthholder"><div class="earth"></div><div class="earth2"></div>
 	<center><div class="Fallingstar1"></div></center>
 		<center><div class="Fallingstar2"></div></center>
 		<center><div class="Fallingstar3"></div></center>
